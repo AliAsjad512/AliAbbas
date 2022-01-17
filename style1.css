@@ -1,0 +1,187 @@
+style.css:
+
+* {
+        margin: 0;
+        padding: 0;
+}
+
+body {
+        font-family: 'Times New Roman', Times, serif;
+        background-color: #fffee0;
+        padding: 2rem;
+}
+
+.heading {
+        font-size: 1.2rem;
+        color: #33330d;
+        padding: 1rem;
+        border-bottom: 2px solid #33330d;
+}
+
+.row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+}
+
+.product {
+        padding: 2rem;
+        text-align: center;
+        max-width: 300px;
+}
+
+.product h2 {
+        color: #767b3a;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        padding: 0.3rem;
+}
+.product h3 {
+        font-size: 1rem;
+        padding: 0.5rem;
+}
+.product p {
+        font-size: 0.8rem;
+        padding: 0.3rem;
+}
+.product img {
+        width: 100%;
+        object-fit: contain;
+}
+.product .price {
+        font-size: 1rem;
+}
+.btn {
+        font-family: 'Times New Roman', Times, serif;
+        padding: 0.6rem;
+        background-color: #232323;
+        margin: 0.3rem;
+        border: none;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 0.7rem;
+}
+.btn:hover {
+        background-color: #d3d3d3 !important;
+        color: #000;
+}
+section {
+        margin-bottom: 3rem;
+}
+footer {
+        font-family: sans-serif;
+        background-color: #232323;
+        padding: 2rem 2rem 0 2rem;
+        color: #afafaf;
+        font-size: 0.8rem;
+}
+footer > div {
+        text-align: center;
+        margin-bottom: 3rem;
+}
+footer h1 {
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        padding: 1rem 0;
+}
+footer ul {
+        list-style: none;
+}
+footer li {
+        font-size: 0.8rem;
+}
+.contacts {
+        text-align: right;
+        padding: 1.5rem 0;
+        margin-bottom: 5rem;
+}
+.contacts img {
+        width: 2.5rem;
+        object-fit: contain;
+}
+.contacts .row {
+        justify-content: end;
+}
+.contacts a {
+        margin: 0 1rem;
+}
+footer > .copyright {
+        margin: 0;
+}
+.copyright p {
+        padding-bottom: 0.5rem;
+}
+.modal {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #0003;
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.card {
+        margin: 2rem;
+        background-color: #fff;
+        max-width: 600px;
+        padding: 1rem 0;
+        position: relative;
+}
+.close {
+        background: none;
+        background-color: #d3d3d3;
+        padding: 0.6rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border: none;
+        cursor: pointer;
+}
+.card h1 {
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-weight: normal;
+        margin: 0 3rem;
+        padding: 1rem 0;
+        border-bottom: 3px solid #d3d3d3;
+}
+.card .product {
+        box-sizing: border-box;
+        display: grid;
+        max-width: unset;
+        width: 100%;
+        grid-template-columns: 200px 1fr;
+        padding: 1rem 3rem;
+        text-align: left;
+        gap: 1rem;
+}
+.card .product h2 {
+        color: #000;
+        font-weight: normal;
+}
+
+.card .product h3 {
+        color: #000;
+}
+.description {
+        background-color: #d3d3d3;
+        padding: 0 3rem;
+}
+.description p {
+        border-bottom: solid 3px #fff;
+        padding: 0.5rem 0;
+}
+
+.description .btn {
+        background-color: #fff;
+        color: #000;
+        margin: 1rem 0;
+}
+
+.hidden {
+        display: none;
+}

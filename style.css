@@ -1,0 +1,142 @@
+body {
+    background-color: #f1e6cf;
+    }
+    .container {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    }
+    
+    .bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    }
+    
+    .top-left {
+    position: absolute;
+    top: 25%;
+    left: 20px;
+    width: 30%;
+    border: white 5px solid;
+    padding: 20px;
+    background-color: silver ;
+    text-align: justify;
+    color: black;
+    }
+    
+    .top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    }
+    
+    .bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    }
+    
+    .centered {
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    width: 40%;
+    text-align: justify;
+    font-weight: bold;
+    color: white;
+    }
+    
+    .blur-image {
+    opacity: 0.9;
+    }
+    
+    .para {
+    display: inline-block;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    margin: 0;
+    }
+    
+    .para-first {
+      
+    background-color: rgb(156, 156, 20);
+    color: white;
+    }
+    
+    .para-second {
+      
+    background-color: rgb(46, 46, 22);
+    color: white;
+    }
+    
+    .para-third {
+    background-color:rgb(161, 152, 64);
+    color: black;
+      
+    }
+    
+    marquee {
+    margin: 0;
+    padding: 0;
+    }
+    
+    
+    .fade-in-animation {
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+    }
+    @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    .logo {
+    border: 2px solid green;
+    border-radius: 10px;
+    }
+    
+    
+    .title {
+    color: green;
+    font-style: italic;
+    }
+    
+    .row {
+    display: flex;
+    }
+    
+    
+    .column1 {
+    flex: 10%;
+    padding: 10px;
+    }
+    
+    .column2 {
+    flex: 90%;
+    padding: 10px;
+    }

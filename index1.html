@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Josefina Body Care Collection</title>
+        <link rel="stylesheet" href="style1.css">
+    </head>
+
+    <body>
+        <div id="modal" class="modal hidden">
+            <div class="card">
+                <button class="close">X</button>
+                <h1>It's in the Bag!</h1>
+                <div class="product">
+
+                </div>
+                <div class="description">
+                    <p>This worderful gift pack is the perfect present for a friend or family member or for treating
+                        yourself! Achieve inner harmony with these soothing and aromatic products based on Indian Rose
+                        and Sweet Almond Oil.
+                    </p>
+                    <button class="btn">Continue Shopping</button>
+                </div>
+            </div>
+        </div>
+        <section>
+            <h1 class="heading">Josefina Body Lotion</h1>
+            <div class="row">
+                <div class="product">
+                    <img src="1.png">
+                    <div class="product-details">
+                        <h2>The Ritual of Sakura</h2>
+                        <h3>Cherry Blosson Hand Lotion</h3>
+                        <p>Body lotion, 70 ml</p>
+                        <p class="price">$12.50</p>
+                        <button title="Add to Shopping Cart" class="btn">Add to Bag</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="2.png">
+                    <div class="product-details">
+                        <h2>The Ritual of Ayurveda</h2>
+                        <h3>Himalaya Honey body cream</h3>
+                        <p>Body cream, 70 ml</p>
+                        <p class="price">$7.50</p>
+                        <button title="Add to Shopping Cart" class="btn">Add to Bag</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="3.png">
+                    <div class="product-details">
+                        <h2>The Ritual of Sakura</h2>
+                        <h3>Organic rice milk body cream</h3>
+                        <p>Body Cream, 70 ml</p>
+                        <p class="price">$7.50</p>
+                        <button title="Add to Shopping Cart" class="btn">Add to Bag</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+
+            <h1 class="heading">Josefina Gift Sets</h1>
+            <div class="row">
+                <div class="product">
+                    <img src="4.png">
+                    <div class="product-details">
+                        <h2>The Ritual of Ayurveda</h2>
+                        <h3>Rebalancing Ritual Gift Set</h3>
+                        <p>Foaming shower gel 200 ml, body scrub 125 g, body cream 70 ml, hand soap 300 ml</p>
+                        <p class="price">$37.50</p>
+                        <button title="Add to Shopping Cart" class="btn">Add to Bag</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="5.png">
+                    <div class="product-details">
+                        <h2>The Ritual of Sakura</h2>
+                        <h3>Renewing Treat gift set</h3>
+                        <p>Foaming shower gel 50 ml, body scrub 70 ml, body cream 70 ml, hand soap 110 ml</p>
+                        <p class="price">$26.00</p>
+                        <button title="Add to Shopping Cart" class="btn">Add to Bag</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="6.png">
+                    <div class="product-details">
+                        <h2>The Ritual of Karma</h2>
+                        <h3>Soothing Ritual gift set</h3>
+                        <p>Foaming shower gel 200 ml, body scrub 125 ml, body cream 70 ml, hand soap 300 ml</p>
+                        <p class="price">$37.50</p>
+                        <button title="Add to Shopping Cart" class="btn">Add to Bag</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="row">
+                <div>
+                    <h1>Help</h1>
+                    <ul>
+                        <li>Customer Service</li>
+                        <li>Live Chat</li>
+                    </ul>
+                </div>
+                <div>
+                    <h1>Account</h1>
+                    <ul>
+                        <li>Your Account</li>
+                        <li>Order Status</li>
+                    </ul>
+                </div>
+                <div>
+                    <h1>Subscribe</h1>
+                    <ul>
+                        <li>Emails</li>
+                        <li>Store Offer and Events</li>
+                    </ul>
+                </div>
+                <div>
+                    <h1>The Memeber Card</h1>
+                    <ul>
+                        <li>Learn More</li>
+                        <li>Pay My Bill</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="contacts">
+                <h1>Connect With Josefina Body Care Collection</h1>
+                <div class="row">
+                    <a href="#"><img src="7.png"></a>
+                    <a href="#"><img src="8.png"></a>
+                    <a href="#"><img src="9.png"></a>
+                    <a href="#"><img src="10.png"></a>
+                    <a href="#"><img src="11.png"></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2021 ET710 Project 2 by Your_First_Name_Your_Last_Name</p>
+                <p>NOTE: This website is a template to create a sales website. All informations and materials user are
+                    for ONLY educational purposes.</p>
+            </div>
+        </footer>
+        <script>
+            let modal = document.getElementById('modal');
+            let modal_product = modal.querySelector('.product');
+
+            modal.querySelectorAll('button').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    modal.classList.add('hidden');
+                })
+            })
+
+            document.querySelectorAll('.product-details .btn').forEach((btn) => {
+                btn.addEventListener('click', (e) => {
+                    modal.classList.remove('hidden');
+                    modal_product.innerHTML = e.target.parentElement.parentElement.innerHTML;
+                    modal_product.querySelector('button').classList.add('hidden');
+                })
+            })
+
+        </script>
+    </body>
+
+</html>
